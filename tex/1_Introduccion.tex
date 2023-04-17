@@ -1,3 +1,24 @@
 \capitulo{1}{Introducción}
 
-Descripción del contenido del trabajo y del estrucutra de la memoria y del resto de materiales entregados.
+Este proyecto comienza en el último punto donde se dejó el ya iniciado Fastastic Roads desde ÍTACA. Nace de la necesidad de añadir una inteligencia artificial capaz de rivalizar al jugador y así crear una competitividad y mayor complejidad a este.
+
+Seguimiento del proyecto:
+
+(7+14 de marzo)
+La segunda semana de marzo nos juntamos César y yo para dar los primeros pasos en el proyecto. El objetivo de esta primera reunión fue concretar por dónde empezar. Llegamos a la conclusión de que lo primero era familiarizarse con el entorno. Comenzaba con experiencia en C\# y Python, por lo que el lenguaje de programación no supondría un problema, al igual que GitHub. Sin embargo, he tenido que aprender a utilizar Texmaker, y todo lo relacionado con inteligencia artificial en Unity es nuevo. 
+Además, el mes anterior construí un videojuego (Snake) sobre el que podría ser interesante implementar una versión simple de la IA para tener una primera aproximación.
+A raíz de esta idea, César me propuso el empleo de submódulos en Unity, que desde el repositorio principal funciona como una referencia al repositorio del videojuego.
+Por lo que las primeras semanas me dediqué a investigar y recabar información general.
+
+(21 de marzo)
+Cuando ya encontré lo necesario y tuve las bases para comenzar a abordar la inteligencia artificial, proseguimos por su programación. 
+Además, ya estando familiarizado con Texmaker, comencé a escribir esta memoria.
+
+(28 de marzo + 4 de abril)
+Las dos semanas siguientes me peleé con la instalación de librerías y entorno en Unity. Hubo ciertas complicaciones, ya que se necesitaban versiones muy concretas para que todas las dependencias funcionasen correctamente. 
+
+Tras esto, realicé la implementación de una inteligencia artificial. En un cuadrilátero circundado por paredes se encuentra un cubo, que será nuestro agente, y una bola, que será el objetivo que tiene que alcanzar el agente.
+Tras varios entrenamientos he obtenido resultados variopintos:
+- El agente puede que nunca llegue hasta el objetivo. Esto puede deberse a que  aprende a no tocar las paredes, siendo la solución dar vueltas alrededor de sí mismo.
+- El agente aprende a llegar al objetivo "demasiado bien". En las primeras iteraciones del algoritmo llega hasta el objetivo varias veces y aprende su posición.
+- El caso más común es que llegue varias veces hasta el objetivo pero no sea tan eficiente como en el caso anterior.
